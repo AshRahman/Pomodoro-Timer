@@ -17,6 +17,6 @@ def second_converter(mins):
     seconds = mins * 60
 
 
-t = input("Choose the practice time: \n 1. Hour \n 2. Mins")
+t = input("Choose the practice time: \n 1. Hour \n 2. Mins ")
 
 single_pomodoro(int(t))
