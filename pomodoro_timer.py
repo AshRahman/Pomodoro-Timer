@@ -2,21 +2,19 @@ import time
 
 
 def single_pomodoro(t):
+    t = t * 3600  # makes the hour into seconds
     while t:
-        mins, secs = divmod(
-            t,
-        )
-        timer = f"{mins:02}:{secs:02}"
+        secs = t % 60  # makes the second not exceed 60 mark
+        mins = int(t / 60) % 60  # makes the minute not exceed 60 mark
+        hours = int(t / 3600)
+        timer = f"{hours:02}:{mins:02}:{secs:02}"
         print(timer, end="\r")
         time.sleep(1)
         t -= 1
-    print("take a break")
+        #####if (mins=)
+    print("Times Up")
 
 
-def second_converter(mins):
-    seconds = mins * 60
-
-
-t = input("Choose the practice time: \n 1. Hour \n 2. Mins")
+t = input("Choose the practice time Duration in hour:")
 
 single_pomodoro(int(t))
