@@ -1,0 +1,24 @@
+{
+  "folders": [
+	{
+		"path": "../Python"
+	},
+	{
+		"name": "Bunch-of-Python-codes",
+		"path": "../Bunch-of-Python-codes"
+	},
+	{
+		"path": "../Store Manager"
+	},
+	{
+		"name": "Pomodoro-Timer",
+		"path": "."
+	}
+],
+  "settings": {
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
+  }
+}
